@@ -44,3 +44,12 @@ plugins:
   FlashNote:
     queue:   "single"
     dequeue: "when_used"
+
+  Database:
+    driver: "SQLite"
+    database: "db/dancr.db"
+
+  DBIC:
+    default:
+      dsn: "dbi:SQLite:dbname=db/dancr.db"
+      schema_class: "MyApp::Schema"
